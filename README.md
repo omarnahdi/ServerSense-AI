@@ -9,7 +9,7 @@ ServerSense-AI🚀 is an intelligent server recommendation assistant designed to
 - AI-powered server plan recommendations.
 - Dynamic matching based on user needs (CPU, RAM, GPU, storage).
 - Fast and efficient backend using Python and FastAPI.
-- User-friendly frontend powered by HTML, CSS(Tailwind).
+- User-friendly frontend powered by HTML, CSS (Tailwind).
 - JSON-based database integration.
 - Version 1.0
 
@@ -17,7 +17,7 @@ ServerSense-AI🚀 is an intelligent server recommendation assistant designed to
 
 ## Tech Stack
 - **Backend:** Python (FastAPI)
-- **Frontend:** HTML, CSS(Tailwind)
+- **Frontend:** HTML, CSS (Tailwind)
 - **Database:** JSON
 - **AI Model:** Gemini
 
