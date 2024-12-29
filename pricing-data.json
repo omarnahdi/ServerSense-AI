@@ -1,0 +1,37 @@
+[{
+  "id": 1,
+  "name": "Basic Compute",
+  "cpu_cores": 4,
+  "ram_gb": 8,
+  "gpu": "No GPU",
+  "storage_gb": 128,
+  "price_in_usd": 20,
+  "description": "Ideal for basic web hosting or lightweight applications."
+}, {
+  "id": 2,
+  "name": "Graphics Starter",
+  "cpu_cores": 8,
+  "ram_gb": 16,
+  "gpu": "NVIDIA T4",
+  "storage_gb": 256,
+  "price_in_usd": 150,
+  "description": "Good for entry-level GPU workloads like rendering or AI."
+}, {
+  "id": 3,
+  "name": "AI Optimized",
+  "cpu_cores": 16,
+  "ram_gb": 32,
+  "gpu": "NVIDIA A100",
+  "storage_gb": 1024,
+  "price_in_usd": 600,
+  "description": "Designed for heavy GPU tasks."
+}, {
+  "id": 4,
+  "name": "Enterprise Max",
+  "cpu_cores": 32,
+  "ram_gb": 128,
+  "gpu": "NVIDIA H100",
+  "storage_gb": 4096,
+  "price_in_usd": "Contact sales",
+  "description": "High-performance solution for enterprise-scale applications."
+}]

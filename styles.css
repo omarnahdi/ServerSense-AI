@@ -1,0 +1,282 @@
+/* CSS Variables */
+:root {
+    --dark-background: #1a1a1a;
+    --light-text: #eee;
+    --teal-accent: #64ffda;
+    --card-background: #222;
+    --card-border: #333;
+    --button-background: #64ffda;
+    --button-hover-background: #44b3a6;
+    --enterprise-button-background: #9e9e9e;
+    --enterprise-button-hover-background: #858585;
+    --small-text: 0.8em;
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Container for pricing cards */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 20px;
+}
+.pricing-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual pricing card */
+.pricing-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.pricing-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.pricing-card .plan-title {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.pricing-card h2 {
+    color: var(--teal-accent);
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.pricing-card .price {
+    display: flex;
+    align-items: baseline;
+    font-size: 1.5em;
+    flex-wrap: wrap;
+}
+
+.pricing-card .price .from {
+    font-size: var(--small-text);
+    color: #999;
+    font-weight: normal;
+    margin-right: 2px;
+}
+
+.pricing-card .price .currency {
+    font-size: var(--small-text);
+    color: #999;
+    font-weight: normal;
+    margin-left: 1px;
+}
+
+.pricing-card .price .price-value {
+    font-size: 1em;
+
+}
+
+.pricing-card .contact-sales {
+    font-size: 1.4em;
+    align-self: flex-end;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.pricing-card li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-card li .icon {
+    margin-right: 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #666;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+.pricing-card li .projects-icon {
+    background-color: #666;
+}
+.pricing-card li .ram-icon {
+    background-color: #666;
+}
+.pricing-card li .gpu-icon {
+    background-color: #666;
+}
+.pricing-card li .storage-icon {
+    background-color: #666;
+}
+.pricing-card li .description-icon {
+    background-color: #666;
+}
+
+.pricing-card .feature-key {
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.pricing-card .feature-description {
+    margin-left: 1px;
+}
+
+.pricing-card .button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--button-background);
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card .button:hover {
+    background-color: var(--button-hover-background);
+}
+
+.pricing-card.enterprise .button {
+    background-color: var(--button-background);
+}
+
+.pricing-card.enterprise .button:hover {
+    background-color: var(--button-hover-background);
+}
+
+/* Chat styles */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-button {
+    background-color: var(--teal-accent);
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+    background-color: var(--button-hover-background);
+}
+
+.chat-window {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    padding: 10px;
+    width: 250px;
+    display: none;
+    flex-direction: column;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding-bottom: 10px;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--card-border);
+    padding-top: 10px;
+}
+
+.chat-input-field {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid var(--card-border);
+    border-radius: 4px;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    margin-right: 5px;
+}
+
+.chat-send-button {
+    background-color: var(--teal-accent);
+    color: #1a1a1a;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.chat-send-button:hover {
+    background-color: var(--button-hover-background);
+}
+
+.chat-message {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.user-message {
+    background-color: #333;
+    text-align: right;
+}
+
+.ai-message {
+    background-color: #444;
+    text-align: left;
+}
